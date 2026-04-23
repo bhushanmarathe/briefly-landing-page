@@ -4,25 +4,25 @@ import { heroData } from "@/data/landing-page";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white pt-10 sm:pt-14 lg:pt-16">
-      <div className="grid gap-14 pb-16 pt-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12 lg:pb-20" />
+    <section className="relative overflow-hidden bg-white pt-2 sm:pt-3 lg:pt-4">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[420px] bg-gradient-to-b from-teal-50 via-white to-white" />
 
       <Container>
-        <div className="grid gap-14 pb-20 pt-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12 lg:pb-24">
+        <div className="grid gap-10 pb-14 pt-0 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-10 lg:pb-16">
           <div className="max-w-3xl">
             <div className="inline-flex items-center rounded-full border border-teal-100 bg-teal-50 px-4 py-2 text-sm font-medium text-teal-700">
               {heroData.badge}
             </div>
 
-            <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-[4rem] lg:leading-[1.02]">
+            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-[4rem] lg:leading-[1.02]">
               {heroData.heading}
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+            <p className="mt-4 max-w-xl text-lg leading-8 text-slate-600 sm:text-xl">
               {heroData.subheading}
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button href="#cta">{heroData.primaryCta}</Button>
 
               <Button href="#how-it-works" variant="secondary">
@@ -30,7 +30,7 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div className="mt-6 flex flex-col gap-3 text-sm text-slate-500 sm:flex-row sm:flex-wrap sm:items-center sm:gap-5">
+            <div className="mt-5 flex flex-col gap-3 text-sm text-slate-500 sm:flex-row sm:flex-wrap sm:items-center sm:gap-5">
               {heroData.trustItems.map((item) => (
                 <div key={item} className="flex items-center gap-2">
                   <span className="text-teal-600">✓</span>
@@ -40,7 +40,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative lg:-mt-4">
             <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-5 text-white shadow-2xl shadow-slate-200/70 sm:p-6">
               <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 sm:p-6">
                 <div className="flex items-center justify-between border-b border-white/10 pb-4">
@@ -132,11 +132,11 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="absolute -bottom-6 -left-4 hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-lg shadow-slate-200/80 sm:block">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+            <div className="absolute -bottom-8 -left-8 hidden max-w-[260px] rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-lg shadow-slate-200/80 sm:block">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">
                 Shared automatically
               </p>
-              <p className="mt-2 text-sm font-medium text-slate-900">
+              <p className="mt-1.5 text-sm font-medium leading-6 text-slate-900">
                 Recap sent to Slack + Notion
               </p>
             </div>
