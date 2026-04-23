@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(13, 148, 136, 0.18);
+  color: #0f172a;
+}
+
+@layer base {
+  * {
+    @apply border-slate-200;
+  }
+
+  body {
+    @apply bg-white text-slate-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply tracking-tight;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a,
+  button {
+    @apply transition-all duration-200;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl;
+  }
+
+  .section-copy {
+    @apply mt-5 text-lg leading-8 text-slate-600;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/70;
+  }
+
+  .soft-ring {
+    @apply ring-1 ring-slate-200;
+  }
+}
