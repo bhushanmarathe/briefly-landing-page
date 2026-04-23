@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Bhushan Marathe" }],
   creator: "Bhushan Marathe",
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://briefly-landing-page-flame.vercel.app/"),
   openGraph: {
     title: "Briefly — AI meeting notes for fast-moving teams",
     description: "Turn every call into summaries, decisions, and next steps.",
-    url: "https://example.com",
+    url: "https://briefly-landing-page-flame.vercel.app/",
     siteName: "Briefly",
     locale: "en_US",
     type: "website",
